@@ -1,0 +1,9 @@
+# Wazuh - Filebeat configuration file
+output.elasticsearch.hosts: ["127.0.0.1:9200"]
+output.elasticsearch.password: <elasticsearch_password>
+
+output.elasticsearch.protocol: https
+output.elasticsearch.ssl.certificate: /etc/elasticsearch/certs/elasticsearch.crt
+output.elasticsearch.ssl.key: /etc/elasticsearch/certs/elasticsearch.key
+output.elasticsearch.ssl.certificate_authorities: /etc/elasticsearch/certs/ca/ca.crt
+output.elasticsearch.username: elastic
